@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">fpay</string>
+    <string name="accessibility_service_label">Accessibility Service</string>
+</resources>

