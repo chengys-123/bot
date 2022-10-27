@@ -1,6 +1,7 @@
 package com.example.myapplication.utils;
 
 import com.example.myapplication.interfaces.CheckBotStatusInterface;
+import com.example.myapplication.interfaces.UploadKasikornInterface;
 import com.example.myapplication.interfaces.UploadTelcoInterface;
 
 public class ApiUtils {
@@ -11,6 +12,11 @@ public class ApiUtils {
     public static UploadTelcoInterface getUploadTelcoInterface() {
 
         return RetrofitClient.getClient(BASE_URL).create(UploadTelcoInterface.class);
+    }
+
+    public static UploadKasikornInterface getUploadKasikornInterface() {
+
+        return RetrofitClient.getClient(BASE_URL).create(UploadKasikornInterface.class);
     }
 
     public static CheckBotStatusInterface getCheckBotStatusInterface() {

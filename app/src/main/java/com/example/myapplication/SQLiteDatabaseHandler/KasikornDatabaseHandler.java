@@ -111,9 +111,9 @@ public class KasikornDatabaseHandler extends SQLiteOpenHelper {
         return tansactionList;
     }
 
-    public boolean checkTransactionExistence(String referenceNo, String date) {
+    public boolean checkTransactionExistence(String referenceNo) {
         SQLiteDatabase db = this.getWritableDatabase();
-        Cursor cursor = db.rawQuery("select * from kasikorn where referenceNo = ? and date = ?", new String[] {referenceNo, date});
+        Cursor cursor = db.rawQuery("select * from kasikorn where referenceNo = ?", new String[] {referenceNo});
         if(cursor.getCount() <= 0){
             cursor.close();
             return false;
